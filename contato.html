@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="menuHorizontal-redes">
+            <div class="redesEsquerda">
+                <img src="Imagens/Logo.png" alt="logo" id="logoSite">
+                <p>Minhas redes sociais</p>
+            </div>
+
+            <div class="redesDireita">
+                <a href="https://github.com/lmpaes/projetos">
+                    <img src="Imagens/Git.jpg" alt="logoGit" id="logoGit"></a>
+                
+                <a href="https://www.linkedin.com/in/leonardompaes/">
+                    <img src="Imagens/Linkedin.png" alt="logoLinkedin" id="logoLinkedin"></a>
+            </div>
+        </div>
+
+        <ul class="menuHorizontal-opcoes">
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao.html">Formação Educacional</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="barraMenu"></div>
+    </nav>
+
+    <div id="conteudoContato">
+        <p class="tituloContato">Contate-me</p>
+
+        <div class="conteudo-divisaoContato"> 
+
+                <div class="divisaoContato1">
+
+                        <div class="contatoDetalhe">
+                            <img src="Imagens/imagem-contato-email.jpg" alt="imgEmail" class="imgContato">
+
+                            <div class="detalheTextoContato">
+
+                                <p class="tituloDetalheContato">E-mail:</p>
+                                <p>l.mpaes@outlook.com</p>
+
+                            </div>
+                        </div>
+
+                        <div class="contatoDetalhe">
+                            <img src="Imagens/imagem-contato-wpp.jpg" alt="imgWhatsApp" class="imgContato">
+
+                            <div class="detalheTextoContato">
+
+                                <p class="tituloDetalheContato">Whats App / Telefone:</p>
+                                <p>(11) 97838-0276</p>
+
+                            </div>
+                        </div>
+
+                        <div class="contatoDetalhe">
+                            <img src="Imagens/imagem-contato-local.jpg" alt="imgLocal" class="imgContato">
+
+                            <div class="detalheTextoContato">
+
+                                <p class="tituloDetalheContato">Local:</p>
+                                <p>Itapevi - SP</p>
+
+                            </div>
+                        </div>
+                </div>
+
+
+            <div class="linhaDivisoria"></div>
+
+
+            <div class="divisaoContato2">
+                <div class="formulario">
+                    <form action="#">
+                        
+                        <label for="nome">Nome completo: </label><br>
+                        
+                        <input type="text" name="nomeCompleto" placeholder="Digite seu nome completo"><br>
+
+                        <label for="email">E-mail: </label><br>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail"><br>
+
+                        <label for="comentario">Mensagem: </label><br>
+                        <textarea id="comentario" rows="4" cols="50" name="comentario" placeholder="Escreva aqui..."></textarea><br>
+
+                        <div id="centroBotao">
+                            <button id="erroBotao"> Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <p>Aviso!!!</p>
+
+        <p>Caso queira entrar em contato, peço que use meu número ou e-mail registrado acima. Formulário com nome, e-mail e mensagem não possui função real, foi criado apenas para treinamento de HTML, CSS e JavaScript.</p>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
