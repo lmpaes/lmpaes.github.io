@@ -1,169 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim | Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagens/Logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="description" content="Portfólio de Leonardo Paes — desenvolvedor com foco em Python, FastAPI, PostgreSQL, dados e IA.">
+  <title>Leonardo Paes | Portfólio</title>
+  <link rel="shortcut icon" href="Imagens/Logo.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.44.0/dist/tabler-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="menuHorizontal-redes">
-            <div class="redesEsquerda">
-                <img src="Imagens/Logo.png" alt="logo" id="logoSite">
-                <p>Minhas redes sociais</p>
-            </div>
 
-            <div class="redesDireita">
-                <a href="https://github.com/lmpaes/projetos">
-                    <img src="Imagens/Git.jpg" alt="logoGit" id="logoGit"></a>
-                
-                <a href="https://www.linkedin.com/in/leonardompaes/">
-                    <img src="Imagens/Linkedin.png" alt="logoLinkedin" id="logoLinkedin"></a>
-            </div>
-        </div>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a class="nav-logo" href="#sobre">LP<span>.</span></a>
 
-        <ul class="menuHorizontal-opcoes">
-            <li><a href="index.html">Sobre Mim</a></li>
-            <li><a href="formacao.html">Formação Educacional</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <div class="barraMenu"></div>
-    </nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="active">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
 
-    <div id="conteudoIndex">
-        <img src="Imagens/imagem-sobremim.jpg" alt="minhaImagem" id="minhaImagem">
-
-        <div class="tituloIndex1">
-            <h1>Leonardo Paes</h1>
-            <h2>Profissional de T.I</h2>
-        </div>
-
-        <p class="textoIndex1">Olá! Meu nome é Leonardo, tenho 25 anos e sempre tive um grande interesse por tudo da área da tecnologia. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, Inglês e realizando outras atividades complementares na área da tecnologia para outras atividades aprimorar minhas habilidades profissionais
-        </p>
+      <div class="nav-right">
+        <!-- TODO: adicionar o arquivo do currículo em assets/curriculo-leonardo-paes.pdf -->
+        <a class="nav-cv" href="assets/curriculo-leonardo-paes.pdf" download>
+          <i class="ti ti-download" aria-hidden="true"></i> Currículo
+        </a>
+        <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <i class="ti ti-menu-2" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <div class="conteudo-divisao">
-        <div id="divisaoIndex1">
-
-            <div class="tituloMaisSobre" id="textoEsquerdo">
-                <h1> Um pouco mais </h2>
-                <h1>sobre mim</h2>
-            </div>
-
-            <p class="textoIndex2">
-                Cursando ADS na Universidade Uninter, venho adquirindo conhecimentos sólidos em áreas essenciais da tecnologia, como programação, banco de dados, desenvolvimento web e mobile, segurança em sistemas de informação, além de conceitos fundamentais como matemática aplicada à computação, legislação, ética e conformidade. Essas disciplinas me capacitam com as habilidades que um profissional de TI deve possuir para enfrentar e solucionar os desafios do dia a dia. Além disso, estou aprimorando meu inglês, também na Uninter, com o objetivo de me manter atualizado com as tendências globais do setor e expandir minhas oportunidades profissionais, reconhecendo a importância do idioma para meu desenvolvimento na área.
-            </p>
-
-            <p class="textoIndex2">
-                Adicionalmente, busco constantemente me envolver em atividades complementares, como cursos, certificações e projetos práticos, que me ajudam a aprimorar minhas habilidades técnicas e explorar novas ferramentas e tecnologias. Acredito que a combinação de teoria e prática é essencial para o desenvolvimento profissional, e procuro aplicar esse princípio em tudo o que faço.
-            </p>
-            
-            <p class="textoIndex2">
-                Sou uma pessoa dedicada, com grande capacidade de aprendizado e adaptação. Valorizo o esforço e a disciplina, buscando sempre o melhor resultado, tanto profissional quanto pessoalmente. Minhas experiências anteriores me ensinaram a tomar decisões rápidas e eficazes, trabalhar em equipe e colocar o cliente em primeiro lugar, o que desenvolveu em mim uma abordagem orientada para a solução de problemas. Estou constantemente em busca de novos desafios que me permitam crescer e aplicar minhas habilidades de forma prática e impactante.
-            </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-glow"></div>
+        <div class="hero-eyebrow">Disponível para oportunidades</div>
+        <h1 class="hero-headline">Leonardo Paes</h1>
+        <p class="hero-subheadline">Transformando dados em <span>decisões com IA</span></p>
+        <p class="hero-desc">Desenvolvedor formado em ADS com especialização em andamento em Ciência de Dados & IA. Certificado pela Microsoft (AZ-900), Anthropic e com projetos práticos em FastAPI e PostgreSQL. Foco em fintech e sistemas inteligentes.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="#projetos">Ver Projetos</a>
+          <a class="btn-outline" href="#contato">Entrar em Contato</a>
         </div>
-
-        <div class="linhaDivisoria"></div>
-
-        <div id="divisaoIndex2">
-            <div class="tituloMaisSobre" id="textoDireito">
-                <h1>Experiências</h1>
-                <h1>profissionais</h1>
-            </div>
-
-            <div class="experiencia" onmouseover="expandir(this)" onmouseout="retrair(this)">
-                <div class="info">
-                    <img src="Imagens/imagem-sobreMim-expProf.jpg" alt="expProfissional">
-                    
-                    <div class="textoInfo">
-                        
-                        <p><span>Empresa:</span> UX Group</p>
-                        <p><span>Período:</span> 8 meses</p>
-                        <p><span>Função:</span> Analista de Customer Success Júnior</p>
-                </div>
-                </div>
-                <div class="detalhes">
-                    <p>Atuei como Analista de Customer Success Júnior no UX Group, com foco em fortalecer o relacionamento com clientes VIPs, promovendo retenção, engajamento e fidelização. Minhas responsabilidades envolveram contato diário com clientes ativos e inativos para reativação e manutenção de vínculos, prospecção de novos leads e acompanhamento do comportamento dos usuários para aprimorar sua jornada nas plataformas. Desenvolvi e apliquei estratégias personalizadas de campanhas voltadas exclusivamente ao público VIP, com o objetivo de ampliar o engajamento e fortalecer a lealdade desse segmento. Ofereci suporte personalizado voltado à experiência e satisfação dos clientes, aplicando estratégias de Customer Success orientadas à retenção e lealdade. Com base nas habilidades desenvolvidas na área de suporte, ampliei meu foco para uma abordagem mais consultiva e estratégica, contribuindo diariamente para o aprimoramento da experiência e do relacionamento com os clientes da empresa.</p>
-                </div>
-            </div>
-
-            <div class="experiencia" onmouseover="expandir(this)" onmouseout="retrair(this)">
-                <div class="info">
-                    <img src="Imagens/imagem-sobreMim-expProf.jpg" alt="expProfissional">
-                    
-                    <div class="textoInfo">
-                        
-                        <p><span>Empresa:</span> UX Group</p>
-                        <p><span>Período:</span> 7 meses</p>
-                        <p><span>Função:</span> Analista de Customer Service Júnior</p>
-                </div>
-                </div>
-                <div class="detalhes">
-                    <p>Atuando como Analista de Customer Service Júnior na UX Group, integrando a operação da Reals Bet e oferecendo suporte via Webchat para garantir uma experiência eficiente e segura aos apostadores. Minhas responsabilidades envolvem a análise de apostas, suporte em transações financeiras (saques e depósitos) e atendimento para esclarecimento de dúvidas gerais dos usuários. Realizo consultas de perfis em múltiplos sistemas e utilizo a plataforma Zendesk para a gestão de atendimentos, assegurando o cumprimento da LGPD. Também mantenho interação com sistemas bancários para suporte em movimentações financeiras, priorizando agilidade, precisão e qualidade no atendimento. Com foco na resolução rápida e no aprimoramento contínuo dos processos, contribui diariamente para a melhoria da experiência do usuário, garantindo eficiência, segurança e satisfação nos atendimentos.</p>
-                </div>
-            </div>
-
-            <div class="experiencia" onmouseover="expandir(this)" onmouseout="retrair(this)">
-                <div class="info">
-                    <img src="Imagens/imagem-sobreMim-expProf.jpg" alt="expProfissional">
-                    
-                    <div class="textoInfo">
-                        
-                        <p><span>Empresa:</span> Tempo</p>
-                        <p><span>Período:</span> 2 Anos e 8 Meses</p>
-                        <p><span>Função:</span> Suporte operacional</p>
-                </div>
-                </div>
-                <div class="detalhes">
-                    <p>Como assistente administrativo desenvolvi capacidades para gestão de equipe, auxiliando em tomada de decisões em atendimentos, trocas de informações com outros setores sobre processos e definindo ações para um fluxo seguro aos serviços. Utilizei o Microsoft Office de forma avançada para criação de planilhas a fim de controlar a produtividade e criar relatórios detalhados, para apresentação à supervisão, coordenação e direção, auxiliando na tomada de decisões. Tive também participação nos processos de fraudes, onde era necessária uma análise para detectar e prevenir assistências fraudulentas, criando cenários para impedir tentativas de fraude contratual.</p>
-                </div>
-            </div>
-
-            <div class="experiencia" onmouseover="expandir(this)" onmouseout="retrair(this)">
-                <div class="info">
-                    <img src="Imagens/imagem-sobreMim-expProf.jpg" alt="expProfissional">
-                    
-                    <div class="textoInfo">
-                        
-                        <p><span>Empresa:</span> Tempo</p>
-                        <p><span>Período:</span> 2 Anos e 11 Meses</p>
-                        <p><span>Função:</span> Analista de Atendimento</p>
-                </div>
-                </div>
-                <div class="detalhes">
-                    <p>Atuei como Analista de Atendimento na Tempo, onde tive a oportunidade de trabalhar em dois setores, adquirindo uma visão ampla e estratégica do atendimento ao cliente. Iniciei no setor de Acionamento e após um ano foi promovido ao Meio de transporte alternativo (MTA)</p>
-
-                    <p>No setor de Acionamento, minha principal responsabilidade era garantir agilidade nos atendimentos, focando na satisfação do cliente. Realizava contato telefônico direto com prestadores para enviá-los rapidamente ao local solicitado pelo segurado, além de fazer a retratação com o cliente. No Acionamento atuei em diversos tipos de serviços, como acionamento de reboque, taxi, eletricista, encanador e outra modalidades existentes no seguro de automóvel e residencial. </p>
-                        
-                    <p>Já no setor de Meio de Transporte Alternativo, a prioridade era o controle de custos, onde era necessário identificar a opção de transporte mais viável para o retorno do segurado e sua família. Essa função exigia a análise cuidadosa de diferentes meios, como aéreo, táxi, rodoviário ou a combinação de dois desses meios, sempre com o objetivo de oferecer a solução mais eficiente e econômica. </p>
-                        
-                    <p>Nos dois setores fui responsável pelo treinamento de novos funcionários devido meu alto conhecimento nos procedimentos</p>
-                </div>
-            </div>
-
-            <div class="experiencia" onmouseover="expandir(this)" onmouseout="retrair(this)">
-                <div class="info">
-                    <img src="Imagens/imagem-sobreMim-expProf.jpg" alt="expProfissional">
-                    
-                    <div class="textoInfo">
-                        
-                        <p><span>Empresa:</span> Tribunal de Justiça de São Paulo</p>
-                        <p><span>Período:</span> 2 Anos e 1 Mês</p>
-                        <p><span>Função:</span> Aluno estagiário</p>
-                </div>
-                </div>
-                <div class="detalhes">
-                    <p>Durante meu período de estágio no TJSP, desempenhei diversas funções administrativas que foram essenciais para o bom funcionamento do cartório. Minhas responsabilidades incluíam o atendimento ao público, localização, arquivamento e organização de processos. Também fui responsável pela elaboração de protocolos para remessa externa, auxiliando na entrada, saída e tramitação de documentos. Realizei atividades como impressão, numeração de folhas, anotações de movimento processual. Além disso, coletei dados para audiências prestando suporte à Juíza, escreventes, advogados, recepcionista e partes interessadas do 3º Oficio Civil de Carapicuíba.</p>
-                </div>
-            </div>
-
-
+        <div class="hero-badges">
+          <span class="badge"><i class="ti ti-certificate" aria-hidden="true"></i> AZ-900 Microsoft</span>
+          <span class="badge"><i class="ti ti-robot" aria-hidden="true"></i> Anthropic Certified</span>
+          <span class="badge"><i class="ti ti-school" aria-hidden="true"></i> ADS Concluído</span>
         </div>
+      </div>
     </div>
-    
-    <script src="script.js"></script>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- SOBRE -->
+  <section class="section section-alt" id="sobre">
+    <div class="section-inner">
+      <div class="section-label">01 — sobre mim</div>
+      <h2 class="section-title">Quem sou eu</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Sou Leonardo Paes, desenvolvedor recém-formado em Análise e Desenvolvimento de Sistemas com foco crescente em inteligência artificial e análise de dados.</p>
+          <p>Ao longo da carreira, atuei em empresas como UX Group e Tempo, onde desenvolvi visão analítica, orientação a dados e uma abordagem centrada em resultados. Hoje direciono essa experiência para o desenvolvimento de sistemas inteligentes — com Python, FastAPI e PostgreSQL como base técnica.</p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card reveal">
+            <i class="ti ti-brain highlight-icon" aria-hidden="true"></i>
+            <div class="highlight-text"><strong>Pós-graduação em andamento</strong>Ciência de Dados & IA — Uninter</div>
+          </div>
+          <div class="highlight-card reveal">
+            <i class="ti ti-chart-dots highlight-icon" aria-hidden="true"></i>
+            <div class="highlight-text"><strong>Foco em IA aplicada</strong>Sistemas inteligentes, análise de dados e automação</div>
+          </div>
+          <div class="highlight-card reveal">
+            <i class="ti ti-code highlight-icon" aria-hidden="true"></i>
+            <div class="highlight-text"><strong>Stack principal</strong>Python · FastAPI · PostgreSQL · JavaScript</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- EXPERIÊNCIA -->
+  <section class="section" id="experiencia">
+    <div class="section-inner">
+      <div class="section-label">02 — experiência</div>
+      <h2 class="section-title">Trajetória profissional</h2>
+
+      <div class="exp-item reveal">
+        <div class="exp-period">8 meses<br><span class="exp-year">2024</span></div>
+        <div>
+          <div class="exp-company">UX Group</div>
+          <div class="exp-role">Analista de Customer Success Jr.</div>
+          <div class="exp-desc">Gestão de clientes VIP, estratégias de retenção e campanhas personalizadas. Análise de comportamento de usuários para aprimoramento da jornada nas plataformas.</div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-period">7 meses<br><span class="exp-year">2023</span></div>
+        <div>
+          <div class="exp-company">UX Group</div>
+          <div class="exp-role">Analista de Customer Service Jr.</div>
+          <div class="exp-desc">Suporte via Zendesk para operação de fintech, análise de transações financeiras e conformidade com a LGPD.</div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-period">2a 8m</div>
+        <div>
+          <div class="exp-company">Tempo</div>
+          <div class="exp-role">Suporte Operacional & Análise de Fraudes</div>
+          <div class="exp-desc">Detecção e prevenção de fraudes contratuais. Relatórios analíticos com Microsoft Office avançado para suporte à tomada de decisão.</div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-period">2a 11m</div>
+        <div>
+          <div class="exp-company">Tempo</div>
+          <div class="exp-role">Analista de Atendimento</div>
+          <div class="exp-desc">Atuação nos setores de Acionamento e Meio de Transporte Alternativo (MTA), com foco em agilidade no atendimento ao segurado, controle de custos logísticos e treinamento de novos colaboradores.</div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-period">2a 1m</div>
+        <div>
+          <div class="exp-company">Tribunal de Justiça de São Paulo</div>
+          <div class="exp-role">Aluno Estagiário — Administrativo</div>
+          <div class="exp-desc">Suporte administrativo no cartório: atendimento ao público, organização e tramitação de processos, elaboração de protocolos de remessa e apoio a audiências do 3º Ofício Cível de Carapicuíba.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- HABILIDADES -->
+  <section class="section section-alt" id="habilidades">
+    <div class="section-inner">
+      <div class="section-label">03 — habilidades</div>
+      <h2 class="section-title">Stack técnica</h2>
+      <div class="skills-grid">
+        <div class="skill-item reveal"><i class="devicon-python-plain skill-icon ic-green" aria-hidden="true"></i><span class="skill-name">Python</span></div>
+        <div class="skill-item reveal"><i class="devicon-fastapi-plain skill-icon ic-teal" aria-hidden="true"></i><span class="skill-name">FastAPI</span></div>
+        <div class="skill-item reveal"><i class="devicon-postgresql-plain skill-icon ic-emerald" aria-hidden="true"></i><span class="skill-name">PostgreSQL</span></div>
+        <div class="skill-item reveal"><i class="devicon-mysql-plain skill-icon ic-violet" aria-hidden="true"></i><span class="skill-name">SQL</span></div>
+        <div class="skill-item reveal"><i class="devicon-mongodb-plain skill-icon ic-orange" aria-hidden="true"></i><span class="skill-name">NoSQL</span></div>
+        <div class="skill-item reveal"><i class="devicon-html5-plain skill-icon ic-orange" aria-hidden="true"></i><span class="skill-name">HTML</span></div>
+        <div class="skill-item reveal"><i class="devicon-css3-plain skill-icon ic-cyan" aria-hidden="true"></i><span class="skill-name">CSS</span></div>
+        <div class="skill-item reveal"><i class="devicon-javascript-plain skill-icon ic-yellow" aria-hidden="true"></i><span class="skill-name">JavaScript</span></div>
+        <div class="skill-item reveal"><i class="devicon-react-original skill-icon ic-cyan" aria-hidden="true"></i><span class="skill-name">React</span></div>
+        <div class="skill-item reveal"><i class="devicon-typescript-plain skill-icon ic-blue" aria-hidden="true"></i><span class="skill-name">TypeScript</span></div>
+        <div class="skill-item reveal"><i class="devicon-java-plain skill-icon ic-orange" aria-hidden="true"></i><span class="skill-name">Java</span></div>
+        <div class="skill-item reveal"><i class="devicon-git-plain skill-icon ic-git" aria-hidden="true"></i><span class="skill-name">Git</span></div>
+        <div class="skill-item reveal"><i class="devicon-azure-plain skill-icon ic-cyan" aria-hidden="true"></i><span class="skill-name">Azure</span></div>
+        <div class="skill-item reveal"><i class="devicon-docker-plain skill-icon ic-cyan" aria-hidden="true"></i><span class="skill-name">Docker</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="section-inner">
+      <div class="section-label">04 — projetos</div>
+      <h2 class="section-title">O que estou construindo</h2>
+
+      <div class="projects-featured">
+        <div class="project-card-featured reveal">
+          <div class="project-img">
+            <span class="project-featured-badge">destaque</span>
+            <!-- TODO: substituir esta div pela imagem <img src="assets/fraudwatch.png" alt="Screenshot do FraudWatch"> assim que o screenshot estiver disponível -->
+            <span class="project-img-label">screenshot do projeto</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">FraudWatch</div>
+            <div class="project-desc">Dashboard de prevenção a fraudes para assistência veicular. Análise de padrões e protocolo de tratamento especial.</div>
+            <div class="project-tags">
+              <span class="tag tag-python">Python</span>
+              <span class="tag tag-fastapi">FastAPI</span>
+              <span class="tag tag-pg">PostgreSQL</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+            <!-- TODO: substituir href="#" pelo link real do projeto FraudWatch (GitHub/deploy) quando disponível -->
+            <a class="project-link" href="#"><i class="ti ti-external-link" aria-hidden="true"></i> Ver projeto</a>
+          </div>
+        </div>
+
+        <div class="project-card-featured reveal">
+          <div class="project-img">
+            <!-- TODO: substituir esta div pela imagem <img src="assets/raizes.png" alt="Screenshot do Raízes do Nordeste"> assim que o screenshot estiver disponível -->
+            <span class="project-img-label">screenshot do projeto</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Raízes do Nordeste</div>
+            <div class="project-desc">Plataforma full-stack acadêmica com RBAC, gestão de usuários por perfil e interface moderna.</div>
+            <div class="project-tags">
+              <span class="tag tag-react">React 18</span>
+              <span class="tag tag-ts">TypeScript</span>
+              <span class="tag tag-fastapi">FastAPI</span>
+              <span class="tag tag-pg">PostgreSQL</span>
+            </div>
+            <a class="project-link" href="https://github.com/lmpaes/raizes-do-nordeste-backend" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> Ver projeto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card-mini reveal">
+          <div class="project-mini-title">Análise de Sentimento — Seleções</div>
+          <div class="project-mini-tags"><span class="tag tag-python">Python</span><span class="tag tag-nlp">NLP</span></div>
+          <div class="project-mini-link"><i class="ti ti-clock" aria-hidden="true"></i> Em desenvolvimento</div>
+        </div>
+        <div class="project-card-mini reveal">
+          <div class="project-mini-title">Projetos SQL & Banco de Dados</div>
+          <div class="project-mini-tags"><span class="tag tag-sql">SQL</span><span class="tag tag-pg">PostgreSQL</span></div>
+          <a class="project-mini-link" href="https://github.com/lmpaes/projetos/tree/main/SQL" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+        <div class="project-card-mini reveal">
+          <div class="project-mini-title">Projetos HTML / CSS / JS</div>
+          <div class="project-mini-tags"><span class="tag tag-js">JavaScript</span><span class="tag tag-java">Java</span></div>
+          <a class="project-mini-link" href="https://github.com/lmpaes/projetos" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+        <div class="project-card-mini reveal">
+          <div class="project-mini-title">Wireframes & Protótipo</div>
+          <div class="project-mini-tags"><span class="tag tag-figma">Figma</span></div>
+          <div class="project-mini-links">
+            <a class="project-mini-link" href="https://www.figma.com/design/XbFeBiWaBkObusA1EwkQM5/Prototipo-de-alta-fidelidade?node-id=21-60&node-type=canvas&t=kYs3gzRJO40cxZZE-0" target="_blank" rel="noopener"><i class="ti ti-brand-figma" aria-hidden="true"></i> Protótipo</a>
+            <a class="project-mini-link" href="https://www.figma.com/design/g4SqNW6Mde1rRbWfcVy6mR/Site---Baixa-fidelidade?node-id=0-1&node-type=canvas&t=dbSEcDkeRdMN0zAs-0" target="_blank" rel="noopener"><i class="ti ti-brand-figma" aria-hidden="true"></i> Wireframes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- FORMAÇÃO -->
+  <section class="section section-alt" id="formacao">
+    <div class="section-inner">
+      <div class="section-label">05 — formação</div>
+      <h2 class="section-title">Educação & certificações</h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <span class="cert-issuer-badge cert-uninter">Uninter</span>
+          <div class="cert-name">Tecnologia em ADS — 2100h</div>
+          <div class="cert-verify"><i class="ti ti-check" aria-hidden="true"></i> Concluído mai/2026</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-issuer-badge cert-uninter">Uninter</span>
+          <div class="cert-name">Pós-grad. Ciência de Dados & IA</div>
+          <div class="cert-verify"><i class="ti ti-clock" aria-hidden="true"></i> Início em breve</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-issuer-badge cert-uninter">Uninter</span>
+          <div class="cert-name">Inglês Avançado — 220h</div>
+          <div class="cert-verify"><i class="ti ti-check" aria-hidden="true"></i> Concluído mai/2026</div>
+        </div>
+        <a class="cert-card reveal" href="https://learn.microsoft.com/api/credentials/share/pt-br/LeoPaes-1574/96F2DB979E05110?sharingId" target="_blank" rel="noopener">
+          <span class="cert-issuer-badge cert-ms">Microsoft</span>
+          <div class="cert-name">Azure Fundamentals AZ-900</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+        <a class="cert-card reveal" href="https://verify.skilljar.com/c/4b5timojdf5m" target="_blank" rel="noopener">
+          <span class="cert-issuer-badge cert-ant">Anthropic</span>
+          <div class="cert-name">Claude 101</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+        <a class="cert-card reveal" href="https://verify.skilljar.com/c/tnq7k4d62voy" target="_blank" rel="noopener">
+          <span class="cert-issuer-badge cert-ant">Anthropic</span>
+          <div class="cert-name">Claude Code 101</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+        <a class="cert-card reveal" href="https://verify.skilljar.com/c/hdimrojhujnt" target="_blank" rel="noopener">
+          <span class="cert-issuer-badge cert-ant">Anthropic</span>
+          <div class="cert-name">AI Fluency: Framework & Foundations</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+        <a class="cert-card reveal" href="https://verify.skilljar.com/c/44sjutst7sck" target="_blank" rel="noopener">
+          <span class="cert-issuer-badge cert-ant">Anthropic</span>
+          <div class="cert-name">AI Capabilities and Limitations</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+        <!-- TODO: adicionar o link real de verificação da certificação "Claude Code in Action" quando disponível -->
+        <a class="cert-card reveal" href="#">
+          <span class="cert-issuer-badge cert-ant">Anthropic</span>
+          <div class="cert-name">Claude Code in Action</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+        <a class="cert-card reveal" href="https://www.udemy.com/certificate/UC-4b37f674-427d-492e-ba97-d4d1473d8894/" target="_blank" rel="noopener">
+          <span class="cert-issuer-badge cert-udemy">Udemy</span>
+          <div class="cert-name">Ethical Hacking Fundamentals</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+        <a class="cert-card reveal" href="https://www.udemy.com/certificate/UC-545f390c-3b9b-406e-8322-f5b310724553/" target="_blank" rel="noopener">
+          <span class="cert-issuer-badge cert-udemy">Udemy</span>
+          <div class="cert-name">Suporte Técnico na Prática</div>
+          <div class="cert-verify"><i class="ti ti-external-link" aria-hidden="true"></i> Verificar credencial</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="section-inner">
+      <div class="section-label">06 — contato</div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 class="contact-left-title">Tem um desafio interessante para resolver?</h2>
+          <p class="contact-left-desc">Estou construindo meu caminho na intersecção entre desenvolvimento de software e inteligência artificial. Se você trabalha com dados, automação ou sistemas financeiros e acredita que posso agregar valor ao seu time, adoraria conversar.</p>
+          <div class="contact-links">
+            <a class="contact-link-item" href="https://www.linkedin.com/in/leonardompaes/" target="_blank" rel="noopener">
+              <div class="contact-link-icon-wrap"><i class="ti ti-brand-linkedin contact-link-icon" aria-hidden="true"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/leonardompaes</span>
+              </div>
+            </a>
+            <a class="contact-link-item" href="https://github.com/lmpaes/projetos" target="_blank" rel="noopener">
+              <div class="contact-link-icon-wrap"><i class="ti ti-brand-github contact-link-icon" aria-hidden="true"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/lmpaes/projetos</span>
+              </div>
+            </a>
+            <a class="contact-link-item" href="https://wa.me/5511911048017" target="_blank" rel="noopener">
+              <div class="contact-link-icon-wrap"><i class="ti ti-brand-whatsapp contact-link-icon" aria-hidden="true"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Telefone / WhatsApp</span>
+                <span class="contact-link-value">(11) 91104-8017</span>
+              </div>
+            </a>
+            <a class="contact-link-item" href="mailto:l.mpaes@outlook.com">
+              <div class="contact-link-icon-wrap"><i class="ti ti-mail contact-link-icon" aria-hidden="true"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">E-mail</span>
+                <span class="contact-link-value">l.mpaes@outlook.com</span>
+              </div>
+            </a>
+            <div class="contact-link-item">
+              <div class="contact-link-icon-wrap"><i class="ti ti-map-pin contact-link-icon" aria-hidden="true"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Localização</span>
+                <span class="contact-link-value">Itapevi, São Paulo — BR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <input class="form-input" type="text" name="from_name" placeholder="Seu nome" required>
+          <input class="form-input" type="email" name="from_email" placeholder="Seu e-mail" required>
+          <textarea class="form-textarea" name="message" placeholder="Sua mensagem..." required></textarea>
+          <button class="form-submit" type="submit">Enviar mensagem</button>
+          <p class="form-status" id="formStatus" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">LP<span>.</span></div>
+      <div class="footer-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-copy">© 2026 Leonardo Paes</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" hidden aria-label="Voltar ao topo">
+    <i class="ti ti-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
