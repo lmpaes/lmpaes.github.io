@@ -6,7 +6,9 @@
   <meta name="theme-color" content="#0D1117">
   <meta name="description" content="Portfólio de Leonardo Paes — desenvolvedor com foco em Python, FastAPI, PostgreSQL, dados e IA.">
   <title>Leonardo Paes | Portfólio</title>
-  <link rel="shortcut icon" href="Imagens/Logo.png" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-180.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -190,6 +192,24 @@
         <div class="project-card-featured reveal">
           <div class="project-img">
             <span class="project-featured-badge">destaque</span>
+            <img src="assets/APPDiegoBorges.jpg" alt="Screenshot do App Espaço Diego Borges">
+          </div>
+          <div class="project-body">
+            <div class="project-title">Espaço Diego Borges</div>
+            <div class="project-desc">App PWA para gestão de agendamentos de salão de beleza, em uso real em produção. Controle completo de agenda, clientes e serviços com dashboard de KPIs financeiros e notificações push.</div>
+            <div class="project-tags">
+              <span class="tag tag-react">React</span>
+              <span class="tag tag-fastapi">FastAPI</span>
+              <span class="tag tag-pg">PostgreSQL</span>
+              <span class="tag tag-pwa">PWA</span>
+            </div>
+            <button class="project-link project-link-wip"><i class="ti ti-external-link" aria-hidden="true"></i> Ver projeto</button>
+            <span class="project-link-wip-msg"></span>
+          </div>
+        </div>
+
+        <div class="project-card-featured reveal">
+          <div class="project-img">
             <!-- TODO: substituir esta div pela imagem <img src="assets/fraudwatch.png" alt="Screenshot do FraudWatch"> assim que o screenshot estiver disponível -->
             <span class="project-img-label">screenshot do projeto</span>
           </div>
@@ -202,45 +222,42 @@
               <span class="tag tag-pg">PostgreSQL</span>
               <span class="tag tag-js">JavaScript</span>
             </div>
-            <!-- TODO: substituir href="#" pelo link real do projeto FraudWatch (GitHub/deploy) quando disponível -->
-            <a class="project-link" href="#"><i class="ti ti-external-link" aria-hidden="true"></i> Ver projeto</a>
-          </div>
-        </div>
-
-        <div class="project-card-featured reveal">
-          <div class="project-img">
-            <!-- TODO: substituir esta div pela imagem <img src="assets/raizes.png" alt="Screenshot do Raízes do Nordeste"> assim que o screenshot estiver disponível -->
-            <span class="project-img-label">screenshot do projeto</span>
-          </div>
-          <div class="project-body">
-            <div class="project-title">Raízes do Nordeste</div>
-            <div class="project-desc">Plataforma full-stack acadêmica com RBAC, gestão de usuários por perfil e interface moderna.</div>
-            <div class="project-tags">
-              <span class="tag tag-react">React 18</span>
-              <span class="tag tag-ts">TypeScript</span>
-              <span class="tag tag-fastapi">FastAPI</span>
-              <span class="tag tag-pg">PostgreSQL</span>
-            </div>
-            <a class="project-link" href="https://github.com/lmpaes/raizes-do-nordeste-backend" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> Ver projeto</a>
+            <button class="project-link project-link-wip"><i class="ti ti-external-link" aria-hidden="true"></i> Ver projeto</button>
+            <span class="project-link-wip-msg"></span>
           </div>
         </div>
       </div>
 
       <div class="projects-grid">
         <div class="project-card-mini reveal">
-          <div class="project-mini-title">Análise de Sentimento — Seleções</div>
-          <div class="project-mini-tags"><span class="tag tag-python">Python</span><span class="tag tag-nlp">NLP</span></div>
-          <div class="project-mini-link"><i class="ti ti-clock" aria-hidden="true"></i> Em desenvolvimento</div>
+          <div class="project-mini-title">Raízes do Nordeste</div>
+          <div class="project-mini-tags">
+            <span class="tag tag-python">Python</span>
+            <span class="tag tag-fastapi">FastAPI</span>
+            <span class="tag tag-pg">PostgreSQL</span>
+          </div>
+          <a class="project-mini-link" href="https://github.com/lmpaes/raizes-do-nordeste-backend" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
         </div>
         <div class="project-card-mini reveal">
           <div class="project-mini-title">Projetos SQL & Banco de Dados</div>
-          <div class="project-mini-tags"><span class="tag tag-sql">SQL</span><span class="tag tag-pg">PostgreSQL</span></div>
-          <a class="project-mini-link" href="https://github.com/lmpaes/projetos/tree/main/SQL" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+          <div class="project-mini-tags"><span class="tag tag-sql">SQL</span></div>
+          <div class="project-mini-links">
+            <a class="project-mini-link" href="https://github.com/lmpaes/projetos/blob/main/SQL/Clinica/Banco%20de%20dados%20-%20Clinica.sql" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> Código</a>
+            <a class="project-mini-link" href="https://github.com/lmpaes/projetos/issues/2" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> Execução</a>
+          </div>
         </div>
         <div class="project-card-mini reveal">
-          <div class="project-mini-title">Projetos HTML / CSS / JS</div>
-          <div class="project-mini-tags"><span class="tag tag-js">JavaScript</span><span class="tag tag-java">Java</span></div>
-          <a class="project-mini-link" href="https://github.com/lmpaes/projetos" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+          <div class="project-mini-title">Fundamentos de Programação</div>
+          <div class="project-mini-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-java">Java</span>
+            <span class="tag tag-python">Python</span>
+          </div>
+          <div class="project-mini-links">
+            <a class="project-mini-link" href="https://github.com/lmpaes/projetos/tree/main/HTML/Portf%C3%B3lio%201.0" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> HTML / CSS / JS</a>
+            <a class="project-mini-link" href="https://github.com/lmpaes/projetos/tree/main/Java" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> Java</a>
+            <a class="project-mini-link" href="https://github.com/lmpaes/projetos/tree/main/Python" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i> Python</a>
+          </div>
         </div>
         <div class="project-card-mini reveal">
           <div class="project-mini-title">Wireframes & Protótipo</div>

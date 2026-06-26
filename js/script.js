@@ -75,6 +75,16 @@ if (!prefersReducedMotion) {
   });
 }
 
+/* Links de projetos em desenvolvimento */
+document.querySelectorAll('.project-link-wip').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const msg = btn.nextElementSibling;
+    msg.textContent = 'Projeto em desenvolvimento, em breve mais detalhes.';
+    clearTimeout(btn._wipTimer);
+    btn._wipTimer = setTimeout(() => { msg.textContent = ''; }, 4000);
+  });
+});
+
 /* Formulário de contato via EmailJS */
 /* TODO: substituir os 3 placeholders abaixo pelos valores reais da
    configuração EmailJS descrita na seção "Configuração EmailJS" do Notion. */
