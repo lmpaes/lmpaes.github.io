@@ -86,9 +86,7 @@ document.querySelectorAll('.project-link-wip').forEach((btn) => {
 });
 
 /* Formulário de contato via EmailJS */
-/* TODO: substituir os 3 placeholders abaixo pelos valores reais da
-   configuração EmailJS descrita na seção "Configuração EmailJS" do Notion. */
-emailjs.init('YOUR_PUBLIC_KEY');
+emailjs.init('gS9u4kVthylEivk8c');
 
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
@@ -97,10 +95,12 @@ const formSubmit = contactForm.querySelector('.form-submit');
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
+  if (contactForm.querySelector('[name="honeypot"]').value) return;
+
   formSubmit.disabled = true;
   formSubmit.textContent = 'Enviando...';
 
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', contactForm)
+  emailjs.sendForm('service_hteqejs', 'template_wyi46u5', contactForm)
     .then(() => {
       formStatus.hidden = false;
       formStatus.className = 'form-status success';
