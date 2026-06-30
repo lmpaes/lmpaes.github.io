@@ -347,6 +347,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 32px;
 }
 
+.about-text .section-title {
+  margin-bottom: 24px;
+}
+
 .about-text p {
   color: var(--text-muted);
   margin-bottom: 16px;
@@ -1040,6 +1044,7 @@ a.contact-link-item:hover {
   .about-grid {
     flex-direction: row;
     gap: 48px;
+    align-items: center;
   }
 
   .about-text { flex: 1.4; }
