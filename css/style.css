@@ -1069,7 +1069,7 @@ a.contact-link-item:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     column-gap: 64px;
-    align-items: start;
+    align-items: center;
   }
 
   .contact-header {
