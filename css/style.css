@@ -1040,26 +1040,10 @@ a.contact-link-item:hover {
   .about-grid {
     flex-direction: row;
     gap: 48px;
-    align-items: center;
   }
 
   .about-text { flex: 1.4; }
-
-  .about-highlights {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .highlight-card {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .highlight-icon {
-    margin-bottom: 18px;
-  }
+  .about-highlights { flex: 1; }
 
   .exp-item {
     display: grid;
